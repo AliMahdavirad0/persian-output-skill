@@ -15,6 +15,18 @@ An instruction-first Agent Skill for Persian writing and mixed-direction output 
 
 It is not an automatic text converter, a universal RTL renderer, or a standalone Word/PDF generator. It does not trigger just because a filename is Persian.
 
+## Word output before and after
+
+The same Persian fixture rendered in LibreOffice before and after the Word builder fix. The title previously had a direct 12 pt override; it now inherits the 26 pt Title style, including complex-script sizing. Body text remains 12 pt and technical runs remain 10 pt.
+
+| Before | After |
+| --- | --- |
+| ![Word fixture before the title-size fix](examples/outputs/word-before.png) | ![Word fixture after the title-size fix](examples/outputs/word-after.png) |
+
+Download the actual Word files: [before](examples/outputs/word-before.docx) · [after](examples/outputs/word-after.docx).
+
+These are rendered builder outputs showing the typography fix, not an agent-with/without-skill benchmark. The source text and hyperlink target were checked for exact preservation.
+
 ## Install
 
 Copy **the whole `skills/persian-output-skill` folder**, including references, into one destination:
