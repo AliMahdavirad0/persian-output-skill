@@ -19,7 +19,6 @@ Example helper, with `python-docx` already available:
 ```python
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
-from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 def set_paragraph_direction(paragraph, rtl=True):
     props = paragraph._p.get_or_add_pPr()
@@ -28,10 +27,14 @@ def set_paragraph_direction(paragraph, rtl=True):
         node = OxmlElement("w:bidi")
         props.append(node)
     node.set(qn("w:val"), "1" if rtl else "0")
-    paragraph.alignment = (
-        WD_ALIGN_PARAGRAPH.RIGHT if rtl else WD_ALIGN_PARAGRAPH.LEFT
-    )
+    alignment = props.find(qn("w:jc"))
+    if alignment is None:
+        alignment = OxmlElement("w:jc")
+        props.append(alignment)
+    alignment.set(qn("w:val"), "start")
 ```
+
+Use logical `w:jc="start"` so alignment follows the paragraph direction; check how the target renderer handles it. Numeric dates contain no strong LTR letters, so separate runs with `w:rtl="0"` alone may still render date groups in reverse order. If the target renderer does that, place the unchanged token in its own LTR paragraph or LTR table-cell paragraph; do not reverse the token or add hidden characters. For titles, avoid direct body-size overrides and keep the style\'s `w:szCs` consistent with `w:sz`.
 
 This helper is only a paragraph-direction building block, not a complete document renderer. Check generated OOXML and exact token text, then render every page through Word/LibreOffice or another capable renderer. Inspect glyph connection, numbers, punctuation, table order, page breaks, and clipping. Without a renderer, say **structurally checked; visual layout unverified**.
 

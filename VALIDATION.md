@@ -36,3 +36,9 @@ python -X utf8 examples/build_docx.py --output sample.docx
 ```
 
 For agent testing, install the complete folder in a fresh project and run [the scenarios](tests/scenarios.md). Review every rendered page for actual Word/PDF tasks; no structural validator replaces that review.
+
+## Word fixture follow-up on 2026-10-12
+
+The original Windows Word visual check above was blocked. A later Linux run used python-docx 1.2.0 and the packaged LibreOffice renderer, then inspected the complete one-page before/after outputs. This exposed physical alignment being interpreted incorrectly in RTL paragraphs and a reversed inline numeric date. The builder now uses logical `w:jc="start"`, style-sized titles with matching complex-script size, and native LTR cell paragraphs for dates and technical values. The date is visibly `2026-10-12`; Persian paragraphs, bullets, and table labels align on the right. The decorative title border was removed.
+
+The screenshots and DOCX files are linked from both READMEs. Four Word regression tests cover title-size inheritance, paragraph direction/alignment, native LTR date cells, and protected technical tokens/hyperlinks. Technical tokens were also extracted from the rendered PDF and compared with the source; PDF date-group positions were checked in increasing left-to-right order. This is a LibreOffice fixture check, not Microsoft Word runtime testing, a general bidi guarantee, or an agent behavior benchmark. Persian PDF extraction remains outside the claims above.

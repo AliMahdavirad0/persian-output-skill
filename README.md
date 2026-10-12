@@ -17,15 +17,15 @@ It is not an automatic text converter, a universal RTL renderer, or a standalone
 
 ## Word output before and after
 
-The same Persian fixture rendered in LibreOffice before and after the Word builder fix. The title previously had a direct 12 pt override; it now inherits the 26 pt Title style, including complex-script sizing. Body text remains 12 pt and technical runs remain 10 pt.
+Before and after the Word builder fixes, rendered in LibreOffice. The corrected output uses logical RTL alignment for Persian paragraphs and bullets, a 26 pt Title style, and native LTR table-cell paragraphs for technical values. The date now displays as `2026-10-12`. Body text remains 12 pt and technical runs remain 10 pt.
 
 | Before | After |
 | --- | --- |
-| ![Word fixture before the title-size fix](examples/outputs/word-before.png) | ![Word fixture after the title-size fix](examples/outputs/word-after.png) |
+| ![Word fixture before the title-size fix](examples/outputs/word-before.png) | ![Word fixture after the title-size fix](examples/outputs/word-after-rtl.png) |
 
-Download the actual Word files: [before](examples/outputs/word-before.docx) · [after](examples/outputs/word-after.docx).
+Download the actual Word files: [before](examples/outputs/word-before.docx) · [after](examples/outputs/word-after-rtl.docx).
 
-These are rendered builder outputs showing the typography fix, not an agent-with/without-skill benchmark. The source text and hyperlink target were checked for exact preservation.
+These are rendered builder outputs, not an agent-with/without-skill benchmark. Dates and quantities were moved into the table to give each value an independent direction. Protected tokens and the hyperlink target were checked for exact preservation. Visual review covers the shown LibreOffice output; Microsoft Word was not run.
 
 ## Install
 
