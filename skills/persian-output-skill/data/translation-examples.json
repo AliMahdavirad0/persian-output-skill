@@ -1,0 +1,122 @@
+[
+  {
+    "id": "T01",
+    "source": "The update may reduce latency.",
+    "persian": "این به‌روزرسانی ممکن است تأخیر را کاهش دهد.",
+    "note": "Preserve may; no guarantee."
+  },
+  {
+    "id": "T02",
+    "source": "At least 12 participants completed the task.",
+    "persian": "دست‌کم 12 نفر کار را به پایان رساندند.",
+    "note": "Preserve lower bound and count."
+  },
+  {
+    "id": "T03",
+    "source": "Up to 30% of requests were delayed.",
+    "persian": "تا 30% از درخواست‌ها با تأخیر روبه‌رو شدند.",
+    "note": "Upper bound is not an exact rate."
+  },
+  {
+    "id": "T04",
+    "source": "The study suggests a link, not a causal relationship.",
+    "persian": "این پژوهش از وجود ارتباطی حکایت دارد، نه رابطه‌ای علّی.",
+    "note": "Do not turn association into causation."
+  },
+  {
+    "id": "T05",
+    "source": "The results were not statistically significant.",
+    "persian": "نتایج از نظر آماری معنادار نبودند.",
+    "note": "Preserve negation and statistical terminology."
+  },
+  {
+    "id": "T06",
+    "source": "Please send the file when you have a chance.",
+    "persian": "لطفاً هر وقت فرصت کردید، فایل را بفرستید.",
+    "note": "Professional and natural; no added deadline."
+  },
+  {
+    "id": "T07",
+    "source": "Can you give me a hand?",
+    "persian": "می‌تونی کمکم کنی؟",
+    "note": "Conversational idiom, not literal hand."
+  },
+  {
+    "id": "T08",
+    "source": "Let's call it a day.",
+    "persian": "بیایید کار را برای امروز تمام کنیم.",
+    "note": "Context-dependent idiom."
+  },
+  {
+    "id": "T09",
+    "source": "The server went down during deployment.",
+    "persian": "سرور هنگام استقرار از دسترس خارج شد.",
+    "note": "Technical context; no literal movement."
+  },
+  {
+    "id": "T10",
+    "source": "Cache invalidation remains a challenge.",
+    "persian": "بی‌اعتبار کردن کش همچنان چالش‌برانگیز است.",
+    "note": "Technical equivalent, not moral invalidity."
+  },
+  {
+    "id": "T11",
+    "source": "This feature is available only to administrators.",
+    "persian": "این قابلیت فقط در دسترس مدیران است.",
+    "note": "Preserve only."
+  },
+  {
+    "id": "T12",
+    "source": "Unless you save the changes, they will be lost.",
+    "persian": "اگر تغییرات را ذخیره نکنید، از دست می‌روند.",
+    "note": "Preserve exception/condition."
+  },
+  {
+    "id": "T13",
+    "source": "The device supports Windows, but not Linux.",
+    "persian": "این دستگاه از Windows پشتیبانی می‌کند، اما از Linux نه.",
+    "note": "Preserve contrast and product names."
+  },
+  {
+    "id": "T14",
+    "source": "I used to work here.",
+    "persian": "قبلاً اینجا کار می‌کردم.",
+    "note": "Past habit; not current employment."
+  },
+  {
+    "id": "T15",
+    "source": "You don't have to restart the service.",
+    "persian": "لازم نیست سرویس را دوباره راه‌اندازی کنید.",
+    "note": "Not obligated is not forbidden."
+  },
+  {
+    "id": "T16",
+    "source": "You must not restart the service.",
+    "persian": "نباید سرویس را دوباره راه‌اندازی کنید.",
+    "note": "Prohibition differs from lack of obligation."
+  },
+  {
+    "id": "T17",
+    "source": "The request timed out after 5 seconds.",
+    "persian": "مهلت درخواست پس از 5 ثانیه تمام شد.",
+    "note": "Keep timing and domain meaning."
+  },
+  {
+    "id": "T18",
+    "source": "The paper was revised twice.",
+    "persian": "مقاله دو بار بازنگری شد.",
+    "note": "Passive is appropriate; do not invent an agent."
+  },
+  {
+    "id": "T19",
+    "source": "The evidence is limited to this sample.",
+    "persian": "شواهد به همین نمونه محدود است.",
+    "note": "Preserve scope."
+  },
+  {
+    "id": "T20",
+    "source": "See Figure 2 and https://example.com/docs?v=2.",
+    "persian": "به شکل 2 و https://example.com/docs?v=2 مراجعه کنید.",
+    "note": "Keep figure reference and URL exact."
+  }
+]

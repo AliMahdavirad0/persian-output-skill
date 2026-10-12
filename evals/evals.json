@@ -1,0 +1,75 @@
+{
+  "skill_name": "persian-output-skill",
+  "evals": [
+    {
+      "id": "E01",
+      "prompt": "Translate into natural professional Persian, without summarizing: \"The update may reduce latency by up to 20%. It does not guarantee improvement for every request. Keep v2.1.0 and 2026-10-12 unchanged.\" Return only the translated paragraph.",
+      "expected": "Preserve may, upper bound, negation, scope, version and date.",
+      "tokens": [
+        "v2.1.0",
+        "2026-10-12"
+      ]
+    },
+    {
+      "id": "E02",
+      "prompt": "Polish spelling and half-spaces only; keep the informal voice and all details: \"اگه وقت داری ميتونی فايل رو بفرستی؟ عجله ندارم. لینک: https://example.com/docs?v=2\" Return only the edited text.",
+      "expected": "Casual tone, meaningful ZWNJ, no new urgency; URL exact.",
+      "tokens": [
+        "https://example.com/docs?v=2"
+      ]
+    },
+    {
+      "id": "E03",
+      "prompt": "Translate visible English text in this HTML into Persian. Preserve the same layout, picture, link, style, code and tag structure. Set RTL only on Persian text blocks. Return just HTML without a Markdown fence: <html lang=\"en\" dir=\"ltr\"><body><section style=\"display:grid;grid-template-columns:1fr 1fr\"><p>The update may help.</p><figure><img src=\"figure.svg\" width=\"640\" height=\"360\" alt=\"Chart\"><figcaption>Figure 1. Example.</figcaption></figure></section><p><a href=\"https://example.com/docs?v=2\">Read the documentation</a></p><pre dir=\"ltr\"><code>amount = 3.14</code></pre></body></html>",
+      "expected": "Scoped RTL text; preserve image attributes, original layout and link/code; preserve may.",
+      "tokens": [
+        "amount = 3.14"
+      ]
+    },
+    {
+      "id": "E04",
+      "prompt": "Translate: You don't have to restart the service. You must not delete the backups.",
+      "expected": "Distinguish lack of obligation from prohibition."
+    },
+    {
+      "id": "E05",
+      "prompt": "Translate for a research article: The evidence suggests an association, not a causal relationship. The results were not statistically significant.",
+      "expected": "Keep association, negation and evidential strength."
+    },
+    {
+      "id": "E06",
+      "prompt": "Translate: At least 12 participants finished; about half asked for help.",
+      "expected": "Preserve lower bound and approximation."
+    },
+    {
+      "id": "E07",
+      "prompt": "Translate conversationally: Could you give me a hand? Let's call it a day.",
+      "expected": "Context-appropriate idioms, natural voice."
+    },
+    {
+      "id": "E08",
+      "prompt": "Translate a formal notice: This feature is available only to administrators unless an exception has been approved.",
+      "expected": "Preserve only and approved exception; formal register."
+    },
+    {
+      "id": "E09",
+      "prompt": "Fix only typography: «كتاب عربي» را عیناً نگه دار. اين فايل ها به روز ميشوند. JSON: {\"amount\":3.14}",
+      "expected": "Quote and JSON untouched; Persian prose typography corrected."
+    },
+    {
+      "id": "E10",
+      "prompt": "Translate this Word article while keeping its embedded pictures and existing sections. No document renderer is available.",
+      "expected": "Preserve source structure/anchors; report visual geometry unverified, no false completion."
+    },
+    {
+      "id": "E11",
+      "prompt": "Translate this scanned two-column PDF and keep every image exactly where it is. No OCR or editable source is available.",
+      "expected": "Identify missing OCR/source; no invented text or layout proof."
+    },
+    {
+      "id": "E12",
+      "prompt": "Translate a web article. The Persian paragraph is too long for its original text box and would cover a picture.",
+      "expected": "Keep meaning and picture; expose conflict and seek layout choice; no silent omission/shrink."
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "english": "latency",
+    "persian": "تأخیر",
+    "context": "software"
+  },
+  {
+    "english": "throughput",
+    "persian": "نرخ پردازش",
+    "context": "software"
+  },
+  {
+    "english": "deployment",
+    "persian": "استقرار",
+    "context": "software"
+  },
+  {
+    "english": "cache",
+    "persian": "کش",
+    "context": "software"
+  },
+  {
+    "english": "request",
+    "persian": "درخواست",
+    "context": "software"
+  },
+  {
+    "english": "response",
+    "persian": "پاسخ",
+    "context": "software"
+  },
+  {
+    "english": "timeout",
+    "persian": "پایان مهلت",
+    "context": "software"
+  },
+  {
+    "english": "endpoint",
+    "persian": "نقطهٔ پایانی",
+    "context": "API"
+  },
+  {
+    "english": "authentication",
+    "persian": "احراز هویت",
+    "context": "security"
+  },
+  {
+    "english": "authorization",
+    "persian": "مجوزدهی",
+    "context": "security"
+  },
+  {
+    "english": "access control",
+    "persian": "کنترل دسترسی",
+    "context": "security"
+  },
+  {
+    "english": "repository",
+    "persian": "مخزن",
+    "context": "version control"
+  },
+  {
+    "english": "commit",
+    "persian": "کامیت",
+    "context": "version control"
+  },
+  {
+    "english": "branch",
+    "persian": "شاخه",
+    "context": "version control"
+  },
+  {
+    "english": "regression",
+    "persian": "پس‌رفت",
+    "context": "software testing"
+  },
+  {
+    "english": "baseline",
+    "persian": "مبنای مقایسه",
+    "context": "evaluation"
+  },
+  {
+    "english": "benchmark",
+    "persian": "آزمون معیار",
+    "context": "evaluation"
+  },
+  {
+    "english": "accuracy",
+    "persian": "دقت",
+    "context": "evaluation; not interchangeable with precision"
+  },
+  {
+    "english": "precision",
+    "persian": "دقت پیش‌بینی‌های مثبت",
+    "context": "classification; clarify metric if needed"
+  },
+  {
+    "english": "recall",
+    "persian": "بازخوانی",
+    "context": "classification"
+  },
+  {
+    "english": "sample",
+    "persian": "نمونه",
+    "context": "research"
+  },
+  {
+    "english": "dataset",
+    "persian": "مجموعه‌داده",
+    "context": "research"
+  },
+  {
+    "english": "confidence interval",
+    "persian": "فاصلهٔ اطمینان",
+    "context": "statistics"
+  },
+  {
+    "english": "statistically significant",
+    "persian": "از نظر آماری معنادار",
+    "context": "statistics"
+  },
+  {
+    "english": "association",
+    "persian": "ارتباط",
+    "context": "statistics; not causality"
+  },
+  {
+    "english": "causal relationship",
+    "persian": "رابطهٔ علّی",
+    "context": "research"
+  },
+  {
+    "english": "limitation",
+    "persian": "محدودیت",
+    "context": "research"
+  },
+  {
+    "english": "user interface",
+    "persian": "رابط کاربری",
+    "context": "product"
+  },
+  {
+    "english": "accessibility",
+    "persian": "دسترس‌پذیری",
+    "context": "product"
+  },
+  {
+    "english": "onboarding",
+    "persian": "آغاز کار کاربر",
+    "context": "product; adapt to the actual process"
+  }
+]

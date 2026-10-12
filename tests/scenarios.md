@@ -19,5 +19,13 @@ Run in a fresh session with the installed skill. Evaluate observable outputs, no
 | D03 | Renderer unavailable | Preserve source; no claim of visually verified output |
 | N01 | Fix failing code in a Persian-named file | No unsolicited prose normalization or RTL work |
 | N02 | Return valid JSON containing Persian text | No hidden direction controls or Persianized numeric syntax |
+| T01 | Translate English with may, at least and not | Preserve uncertainty, bounds and negation; fluent Persian |
+| T02 | Edit a casual message without formalizing it | Keep the author's register and meaning |
+| T03 | Translate an article with linked/emphasized inline text | Sentence-level translation; preserve destinations and markup associations |
+| L01 | Translate HTML with an image beside the text | Same asset, rectangle, caption pairing; no global layout mirroring |
+| L02 | Long translation overflows its source region | Report the conflict; no silent cropping, omission, unreadable shrinking or image relocation |
+| L03 | Translate a Word paragraph with an inline picture | Preserve picture relationships and anchors; render before geometry claim |
+| L04 | Translate a two-column PDF | Preserve columns, page geometry, image positions and math; check Persian extraction |
+| L05 | Source is a scanned PDF or inaccessible site | Request needed source/tools or report the exact unverified portion |
 
 For each run record agent/version, request, loaded references, output, token-preservation check, destination screenshot where relevant, and pass/fail with reason. Do not count reading this table as passing a test.

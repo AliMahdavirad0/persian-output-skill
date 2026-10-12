@@ -5,6 +5,7 @@ import json
 import re
 import sys
 import unicodedata
+import importlib.util
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skills" / "persian-output-skill"
@@ -85,6 +86,20 @@ def validate(root=ROOT):
         check(f"web-token-no-controls:{name}", actual is not None and not any(unicodedata.category(ch) == "Cf" for ch in actual))
     check("web-no-hidden-bidi", not (set(html) & BIDI))
     check("license", "MIT License" in (root / "LICENSE").read_text(encoding="utf-8"))
+    for name, count in [('translation-examples', 20), ('glossary', 30)]:
+        data = json.loads((skill / 'data' / f'{name}.json').read_text(encoding='utf-8'))
+        check(f'data-count:{name}', len(data) == count)
+        check(f'data-no-hidden-bidi:{name}', not (set(json.dumps(data, ensure_ascii=False)) & BIDI))
+    cases = json.loads((root / 'evals' / 'evals.json').read_text(encoding='utf-8'))
+    check('eval-skill-name', cases['skill_name'] == 'persian-output-skill')
+    check('eval-unique-cases', len(cases['evals']) == 12 and len({case['id'] for case in cases['evals']}) == 12)
+    spec = importlib.util.spec_from_file_location('html_auditor', skill / 'scripts' / 'audit_html.py')
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    demo = root / 'examples' / 'layout-preservation'
+    result = module.audit((demo / 'original.html').read_text(encoding='utf-8'), (demo / 'translated.html').read_text(encoding='utf-8'))
+    check('article-demo-preservation', result['passed'])
+    check('article-demo-asset-exists', (demo / 'assets' / 'figure.svg').is_file())
     return checks
 
 

@@ -1,5 +1,7 @@
 # Word and PDF
 
+For translating an existing article/document with pictures in their original positions, first read [layout preservation](preserve-layout.md); preserve the supplied layout instead of rebuilding a generic document. Its existing-table rule takes precedence over changing table visual direction below.
+
 ## Word
 
 Set paragraph base direction to RTL as well as the desired alignment. Apply it to headings, body paragraphs, list paragraphs, headers/footers, and Persian paragraphs inside cells. Set table direction so the first logical column appears on the intended side. Keep purely technical paragraphs LTR and left-aligned.

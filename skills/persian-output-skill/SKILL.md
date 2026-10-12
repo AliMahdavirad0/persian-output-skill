@@ -1,6 +1,6 @@
 ---
 name: persian-output-skill
-description: Write or edit Persian prose and fix Persian mixed-direction output in chat, HTML, Word, and PDF. Use when Persian writing quality or RTL presentation is part of the requested deliverable. Do not activate merely because a technical task contains a Persian word, filename, or identifier.
+description: Write or edit natural Persian, translate English to Persian faithfully, and localize articles or web pages while preserving images and layout in HTML, Word, and PDF. Also fix Persian mixed-direction output. Do not activate merely because a technical task contains a Persian filename or identifier.
 ---
 
 # Persian Output | خروجی فارسی
@@ -12,6 +12,8 @@ Deliver natural Persian with correct direction for the destination. Follow the u
 Read only the reference needed for the current output:
 
 - Prose composition or editing: [Persian writing](references/writing.md).
+- English-to-Persian translation: [Translation](references/translation.md) and [Register](references/register.md).
+- Translate an existing website, article, Word file, or PDF in its original layout: [Preserve the source layout](references/preserve-layout.md), plus the translation reference.
 - Chat, Markdown, plain text, or invisible Unicode marks: [Text direction](references/text-direction.md).
 - HTML, CSS, or a web interface: [Web RTL](references/web.md).
 - Word or PDF: [Documents](references/documents.md).
@@ -20,6 +22,10 @@ Read only the reference needed for the current output:
 For a writing-and-formatting task, combine the writing reference with the destination reference. Instructions are tool-independent; use the authoring tools already available. Never require a named plugin.
 
 All package files are UTF-8. On Windows, read references with an explicit UTF-8 encoding (for example `Get-Content -Encoding utf8`); run Python helpers with `python -X utf8` when the environment defaults to a legacy encoding. If Persian examples appear as question marks or replacement glyphs in tool output, correct decoding before relying on that text.
+
+## Decide the operation
+
+For writing, compose from the user's facts. For editing, change only the requested level: spelling cleanup, sentence polishing, or broader rewriting. For translation, retain the complete source meaning and structure; do not summarize by default. For an existing artifact, translate within its existing text regions rather than rebuild it from a prose extraction. Keep a separate translated copy unless the user requests an in-place source edit. Persian-to-English translation is outside this version's specialized guidance.
 
 ## Shared invariants
 

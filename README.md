@@ -27,6 +27,33 @@ Download the actual Word files: [before](examples/outputs/word-before.docx) · [
 
 These are rendered builder outputs, not an agent-with/without-skill benchmark. Dates and quantities were moved into the table to give each value an independent direction. Protected tokens and the hyperlink target were checked for exact preservation. Visual review covers the shown LibreOffice output; Microsoft Word was not run.
 
+## New in 0.2.0: translate without redesigning
+
+The existing chat, RTL, web, Word and PDF guidance remains. New routes add English-to-Persian translation, natural Persian editing, and translation inside an article's existing layout.
+
+- Translate coherent text in its original regions; retain images, captions, links, code and section order.
+- Scope RTL to text when mirroring the whole layout would move pictures or columns.
+- Preserve uncertainty, conditions and source meaning; choose register from the audience and deliverable.
+- Support source-aware workflows for web/HTML, Word and PDF. These are agent instructions, not a universal URL/PDF conversion service.
+
+Open the paired demo: [English article](examples/layout-preservation/original.html) → [Persian counterpart](examples/layout-preservation/translated.html). It uses the same illustration, stylesheet, structure and link/code strings. Exact image rectangles were checked at equal desktop and mobile widths; arbitrary sites/files still need their own review.
+
+See [the translation pilot](evals/BENCHMARK.md) for actual with/without-skill outputs and limitations. The initial pilot does not establish a naturalness advantage; its purpose is reproducible evaluation rather than a marketing score.
+
+Example request:
+
+```text
+$persian-output-skill Translate this article into natural Persian. Keep each image in its original position, translate captions beside their figures, preserve links/code, and save a separate translated copy.
+```
+
+The optional static HTML auditor is read-only and dependency-free:
+
+```text
+python -X utf8 skills/persian-output-skill/scripts/audit_html.py original.html translated.html --json
+```
+
+It checks structural/asset/code preservation, not rendered geometry or translation quality. When a longer translation cannot fit without moving content, the skill must explain the conflict and seek a layout choice instead of silently cropping, shrinking, or omitting text. Scanned PDFs need OCR; text inside images is unchanged unless image editing is requested.
+
 ## Install
 
 Copy **the whole `skills/persian-output-skill` folder**, including references, into one destination:

@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-12",
+  "agent": "Codex CLI 0.162.0-alpha.17.2",
+  "model_settings": "User-configured defaults, no explicit model override; fresh project directories and ephemeral sessions.",
+  "cases": [
+    {
+      "case": "E01",
+      "mode": "without_skill",
+      "exit_code": 0,
+      "duration_seconds": 16.6,
+      "protected_tokens_exact": true,
+      "output": "این به‌روزرسانی ممکن است تأخیر را تا ۲۰٪ کاهش دهد. بهبود عملکرد برای تک‌تک درخواست‌ها تضمین نمی‌شود. v2.1.0 و 2026-10-12 را بدون تغییر نگه دارید.",
+      "checks_scope": "Technical token checks only; naturalness requires separate review."
+    },
+    {
+      "case": "E01",
+      "mode": "with_skill",
+      "exit_code": 0,
+      "duration_seconds": 24.8,
+      "protected_tokens_exact": true,
+      "output": "این به‌روزرسانی ممکن است تأخیر را تا ۲۰٪ کاهش دهد. با این حال، بهبود عملکرد را برای همهٔ درخواست‌ها تضمین نمی‌کند. v2.1.0 و 2026-10-12 را بدون تغییر نگه دارید.",
+      "checks_scope": "Technical token checks only; naturalness requires separate review."
+    },
+    {
+      "case": "E02",
+      "mode": "without_skill",
+      "exit_code": 0,
+      "duration_seconds": 20.5,
+      "protected_tokens_exact": true,
+      "output": "اگه وقت داری می‌تونی فایل رو بفرستی؟ عجله ندارم. لینک: https://example.com/docs?v=2",
+      "checks_scope": "Technical token checks only; naturalness requires separate review."
+    },
+    {
+      "case": "E02",
+      "mode": "with_skill",
+      "exit_code": 0,
+      "duration_seconds": 42.7,
+      "protected_tokens_exact": true,
+      "output": "اگه وقت داری می‌تونی فایل رو بفرستی؟ عجله ندارم. لینک: https://example.com/docs?v=2",
+      "checks_scope": "Technical token checks only; naturalness requires separate review."
+    },
+    {
+      "case": "E03",
+      "mode": "without_skill",
+      "exit_code": 0,
+      "duration_seconds": 32.3,
+      "protected_tokens_exact": true,
+      "output": "<html lang=\"fa\" dir=\"ltr\"><body><section style=\"display:grid;grid-template-columns:1fr 1fr\"><p dir=\"rtl\">این به‌روزرسانی ممکن است کمک کند.</p><figure><img src=\"figure.svg\" width=\"640\" height=\"360\" alt=\"نمودار\"><figcaption dir=\"rtl\">شکل ۱. نمونه.</figcaption></figure></section><p dir=\"rtl\"><a href=\"https://example.com/docs?v=2\">مستندات را بخوانید</a></p><pre dir=\"ltr\"><code>amount = 3.14</code></pre></body></html>",
+      "checks_scope": "Technical token checks only; naturalness requires separate review.",
+      "html_source_audit": {
+        "passed": true,
+        "checks": {
+          "explicit_html_balance": true,
+          "structure_and_stable_attributes": true,
+          "protected_code_scripts_styles_math": true
+        },
+        "parse_notes": [],
+        "limit": "Static source check only. Render both pages to compare image geometry and text fit; review translation separately."
+      }
+    },
+    {
+      "case": "E03",
+      "mode": "with_skill",
+      "exit_code": 0,
+      "duration_seconds": 25.2,
+      "protected_tokens_exact": true,
+      "output": "<html lang=\"en\" dir=\"ltr\"><body><section style=\"display:grid;grid-template-columns:1fr 1fr\"><p lang=\"fa\" dir=\"rtl\">این به‌روزرسانی ممکن است مفید باشد.</p><figure><img src=\"figure.svg\" width=\"640\" height=\"360\" alt=\"نمودار\"><figcaption lang=\"fa\" dir=\"rtl\">شکل ۱. نمونه.</figcaption></figure></section><p lang=\"fa\" dir=\"rtl\"><a href=\"https://example.com/docs?v=2\">مستندات را بخوانید</a></p><pre dir=\"ltr\"><code>amount = 3.14</code></pre></body></html>",
+      "retry_note": "First attempt timed out at 150 seconds. Retry explicitly scoped to source-only transformation; not a strictly matched baseline pair.",
+      "checks_scope": "Technical token checks only; naturalness requires separate review.",
+      "html_source_audit": {
+        "passed": true,
+        "checks": {
+          "explicit_html_balance": true,
+          "structure_and_stable_attributes": true,
+          "protected_code_scripts_styles_math": true
+        },
+        "parse_notes": [],
+        "limit": "Static source check only. Render both pages to compare image geometry and text fit; review translation separately."
+      }
+    }
+  ],
+  "limitations": [
+    "E01 and E02 are matched single-run pairs only.",
+    "E03 original with-skill run timed out at 150 seconds; a source-only retry is not a matched baseline comparison.",
+    "No blind human evaluation or statistical quality uplift is established.",
+    "Remaining nine cases are prompts, not completed agent runs."
+  ]
+}

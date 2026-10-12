@@ -1,6 +1,6 @@
 interface:
   display_name: "خروجی فارسی"
-  short_description: "نگارش فارسی و راست‌به‌چپ در چت، وب و اسناد"
-  default_prompt: "Use $persian-output-skill to improve this Persian output while preserving code, links, and technical tokens."
+  short_description: "نگارش و ترجمهٔ فارسی با حفظ تصاویر و ساختار"
+  default_prompt: "Use $persian-output-skill to translate this English article into natural Persian while preserving meaning, images, layout, links, and code."
 policy:
   allow_implicit_invocation: true

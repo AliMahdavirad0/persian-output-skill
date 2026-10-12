@@ -1,5 +1,7 @@
 # HTML and CSS
 
+For translating an existing page whose pictures and layout must stay in place, first read [layout preservation](preserve-layout.md). Its scoped text-direction rule takes precedence over setting RTL on the document root below. The root rule below is for newly authored Persian layouts.
+
 Set language and direction on the Persian document root:
 
 ```html

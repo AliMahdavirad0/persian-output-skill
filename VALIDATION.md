@@ -1,5 +1,17 @@
 # Validation evidence
 
+## Version 0.2.0 follow-up
+
+The 0.2.0 extension is based on upstream commit `099a27d`. The Word builder, Word regression tests, committed before/after artifacts and alignment/date fixes are preserved. All 15 repository regression tests pass, including the four upstream Word tests and seven new static HTML audit tests. The package checker passes with the translation data, references, authored article fixture and evaluation files included.
+
+Twenty authored translation examples, 30 contextual glossary seeds and 12 evaluation prompts are packaged. The first two prompts were tested with and without the skill; both configurations preserved the declared protected content. No naturalness uplift is claimed. The third with-skill test originally timed out; its source-only retry completed, with the limitation recorded in [the pilot report](evals/BENCHMARK.md).
+
+The paired article demo was visually inspected on desktop and 390px mobile. Its image asset, exact image rectangle, source structure, link/code content and lack of page overflow were checked; raw values are in [geometry evidence](examples/layout-preservation/geometry-evidence.json). This is one static authored example, not proof of arbitrary site/Word/PDF layout-preserving translation.
+
+Word visual evidence from the upstream Linux run remains valid as recorded below; no fresh Windows Word/LibreOffice render was performed for this extension. Claude Code still requires authentication for actual invocation testing. Specialized guidance now includes Word/PDF article translation and its source/OCR/rendering prerequisites; no universal converter is bundled.
+
+## Initial package evidence
+
 This file records performed checks, not guarantees for all models or renderers.
 
 Checked on 2026-10-12 on Windows. Evidence separates format compatibility from agent/runtime support.
