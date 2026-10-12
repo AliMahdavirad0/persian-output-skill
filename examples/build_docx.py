@@ -23,15 +23,17 @@ def direction(paragraph, rtl=True):
     paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT if rtl else WD_ALIGN_PARAGRAPH.LEFT
 
 
-def run_text(paragraph, text, rtl=True):
+def run_text(paragraph, text, rtl=True, size=None):
     run = paragraph.add_run(text)
     run.font.name = "Tahoma" if rtl else "Consolas"
-    run.font.size = Pt(12 if rtl else 10)
+    if size is not None:
+        run.font.size = Pt(size)
     props = run._r.get_or_add_rPr()
     property_node(props, "w:rtl", "1" if rtl else "0")
     fonts = props.find(qn("w:rFonts"))
     fonts.set(qn("w:cs"), "Tahoma")
-    property_node(props, "w:szCs", "24")
+    if size is not None:
+        property_node(props, "w:szCs", str(int(size * 2)))
     lang = property_node(props, "w:lang", "fa-IR" if rtl else "en-US")
     lang.set(qn("w:bidi"), "fa-IR")
     return run
@@ -41,12 +43,17 @@ def paragraph(doc, segments, style=None, rtl=True):
     p = doc.add_paragraph(style=style)
     direction(p, rtl)
     for text, is_rtl in segments:
-        run_text(p, text, is_rtl)
+        size = None if style and style != "List Bullet" else (12 if is_rtl else 10)
+        run_text(p, text, is_rtl, size=size)
     return p
 
 
 def build(output):
     doc = Document()
+    # Match complex-script title size to the existing Title style, not body text.
+    title_style = doc.styles["Title"]
+    property_node(title_style.element.get_or_add_rPr(), "w:szCs",
+                  str(int(title_style.font.size.pt * 2)))
     doc.core_properties.author = "Persian Output Skill"
     doc.core_properties.title = "نمونهٔ خروجی فارسی"
     for section in doc.sections:
@@ -65,18 +72,18 @@ def build(output):
     property_node(table._tbl.tblPr, "w:bidiVisual")
     for cell, value in zip(table.rows[0].cells, ["مورد", "مقدار"]):
         direction(cell.paragraphs[0])
-        run_text(cell.paragraphs[0], value)
+        run_text(cell.paragraphs[0], value, size=12)
     for label, value, is_rtl in [("نسخه", "v2.1.0", False), ("وضعیت", "آمادهٔ بررسی", True)]:
         cells = table.add_row().cells
         for cell in cells:
             direction(cell.paragraphs[0])
-        run_text(cells[0].paragraphs[0], label)
-        run_text(cells[1].paragraphs[0], value, is_rtl)
+        run_text(cells[0].paragraphs[0], label, size=12)
+        run_text(cells[1].paragraphs[0], value, is_rtl, size=12 if is_rtl else 10)
     p = paragraph(doc, [("پیوند: ", True)])
     target = "https://example.com/docs?q=rtl&v=2"
     link = OxmlElement("w:hyperlink")
     link.set(qn("r:id"), p.part.relate_to(target, RT.HYPERLINK, is_external=True))
-    r = run_text(p, target, False)
+    r = run_text(p, target, False, size=10)
     p._p.remove(r._r)
     link.append(r._r)
     p._p.append(link)
