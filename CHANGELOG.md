@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.2 — 2026-10-12
+
+- Repair Persian Unicode/presentation-form and joiner loss in the scientific PDF fixture with a vector appearance and correctly mapped selectable text layer.
+- Add an optional read-only PDF region/search auditor and reproducible article-specific rebuild example.
+- Add dual-engine PDF search/character-fidelity regressions; retain explicit mixed-copy and clipboard limitations.
+
+
 ## 0.2.1 — 2026-10-12
 
 - Fix the HTML auditor to preserve layout/media/code direction and inherited non-translatable attributes, with seven regressions.

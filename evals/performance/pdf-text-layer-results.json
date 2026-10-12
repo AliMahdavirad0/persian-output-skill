@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-12",
+  "pipeline": "Vector outlines for translated regions plus one invisible, Unicode-mapped text layer; no page or figure rasterization. Glyphs are emitted in semantic order with bidi coordinates; joiners/hamza have explicit ToUnicode mappings.",
+  "checks": {
+    "page_count_and_sizes": true,
+    "images_and_geometry_match_previous": true,
+    "figure1_pixel_hash_and_position": true,
+    "links": true,
+    "code_page3": true,
+    "reference_pages5_6": true,
+    "mupdf_region_copy": true,
+    "two_engine_search": true
+  },
+  "readers": {
+    "mupdf": "1.28.2",
+    "pdfium": "156.0.8076.0"
+  },
+  "results": {
+    "mupdf": {
+      "engine": "mupdf",
+      "regions": [
+        {
+          "id": "1-1",
+          "passed": true,
+          "actual": "ب\nستهٔ پایتونی SysIdentPy\n برای \nشنا\nسایی \nسی\nستم با\nاستفاده از مدل‌های NARMAX"
+        },
+        {
+          "id": "1-12",
+          "passed": true,
+          "actual": "حوزهٔ شناسایی سیستم (SI\n) با هدف ساخت مدل‌های ریاضی برای رفتار ایستا و پویا بر پایهٔ داده‌های\nتجربی شکل گرفته است (Ljung, 1987\n). به‌ویژه، شناسایی سیستم‌های غیرخطی به مسئله‌ای محوری\nدر جامعهٔ SI\n تبدیل شده و از دههٔ 1950\n به بعد روش‌های بسیاری برای آن پیشنهاد شده است. در این\nزمینه، مدل‌های NARMAX\n (خودرگرسیو غیرخطی با میانگین متحرک و ورودی برون‌زا) از مستندترین و\nپرکاربردترین شیوه‌های نمایش مدل سیستم‌های پویا هستند (Billings, 2013\n)."
+        },
+        {
+          "id": "4-1",
+          "passed": true,
+          "actual": "دستورهای model.results\n و model.residuals\n مدل چندجمله‌ای به‌دست‌آمده با روش fit\n را\nبرمی‌گردانند و نتایج را برای تحلیل کیفی تر\nسیم می‌کنند."
+        },
+        {
+          "id": "4-5",
+          "passed": true,
+          "actual": "جدول زیر و شکل 1 خروجی مثال یادشده هستند. جدول 1 متغیرهای رگرسیونی انتخاب‌شده برای\nتشکیل مدل نهایی، پارامترهای متناظر آن‌ها و نسبت کاهش خطا (ERR\n) را به‌تفصیل نشان می‌دهد؛\nاین نسبت سهم هر متغیر رگرسیونی را در توضیح خروجی سیستم اندازه‌گیری می‌کند. مقادیر ERR\n را\nمی‌توان به‌عنوان معیاری برای اهمیت ویژگی‌ها تفسیر کرد. شکل 1 شبیه‌سازی پیش‌بینی مدل و\nداده‌های اعتبارسنجی، و نیز خودهمبستگی باقیمانده‌های مدل و همبستگی متقابل بین ورودی و\nباقیمانده‌ها را نشان می‌دهد."
+        },
+        {
+          "id": "4-9",
+          "passed": true,
+          "actual": "شکل 1. نتایج مدل‌سازی یک سیستم شبیه‌سازی‌شده که همراه بستهٔ SysIdentPy\n ارائه شده است.\nشبیه‌سازی آزاد (داده‌های اعتبارسنجی در مقایسه با پیش‌بینی مدل)، خودهمبستگی باقیمانده‌ها و\nهمبستگی متقابل بین باقیمانده‌ها و ورودی."
+        },
+        {
+          "id": "4-10",
+          "passed": true,
+          "actual": "برای اطلاعات بیشتر و نمونه‌هایی از نحوهٔ ساخت مدل‌های NARMAX\n و گونه‌های آن با استفاده از\nروش‌های مختلف برآورد پارامترها، انتخاب مرتبهٔ مدل و بسیاری موارد دیگر، به مستندات بسته مراجعه\nکنید."
+        },
+        {
+          "id": "table-h1",
+          "passed": true,
+          "actual": "متغیرهای رگرسیونی"
+        },
+        {
+          "id": "table-h2",
+          "passed": true,
+          "actual": "پارامترها"
+        }
+      ],
+      "search": [
+        {
+          "text": "شناسایی",
+          "passed": true
+        },
+        {
+          "text": "متغیرهای",
+          "passed": true
+        },
+        {
+          "text": "مدل‌سازی",
+          "passed": true
+        },
+        {
+          "text": "شبیه‌سازی",
+          "passed": true
+        },
+        {
+          "text": "مدل‌های",
+          "passed": true
+        },
+        {
+          "text": "model.results",
+          "passed": true
+        },
+        {
+          "text": "SysIdentPy",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "limit": "Region text is checked modulo whitespace only; this is not a native clipboard test or a guarantee for other readers."
+    },
+    "pdfium": {
+      "engine": "pdfium",
+      "regions": [
+        {
+          "id": "1-1",
+          "passed": false,
+          "actual": "پایتونی SysIdentPy برای شناسایی سیستم بابستهٔ\r\nاستفاده از مدل‌های NARMAX"
+        },
+        {
+          "id": "1-12",
+          "passed": false,
+          "actual": "حوزهٔ شناسایی سیستم )SI )با هدف ساخت مدل‌های ریاضی برای رفتار ایستا و پویا بر پایهٔ داده‌های\r\nتجربی شکل گرفته است )1987 ,Ljung). به‌ویژه، شناسایی سیستم‌های غیرخطی به مسئله‌ای محوری\r\nدر جامعهٔ SI تبدیل شده و از دههٔ 1950 به بعد روش‌های بسیاری برای آن پیشنهاد شده است. در این\r\nزمینه، مدل‌های NARMAX( خودرگرسیو غیرخطی با میانگین متحرک و ورودی برون‌زا( از مستندترین و\r\nپرکاربردترین شیوه‌های نمایش مدل سیستم‌های پویا هستند )2013 ,Billings)."
+        },
+        {
+          "id": "4-1",
+          "passed": false,
+          "actual": "دستورهای results.model و residuals.model مدل چندجمله‌ای به‌دست‌آمده با روش fit را\r\nبرمی‌گردانند و نتایج را برای تحلیل کیفی ترسیم می‌کنند."
+        },
+        {
+          "id": "4-5",
+          "passed": false,
+          "actual": "جدول زیر و شکل 1 خروجی مثال یادشده هستند. جدول 1 متغیرهای رگرسیونی انتخاب‌شده برای\r\nتشکیل مدل نهایی، پارامترهای متناظر آن‌ها و نسبت کاهش خطا )ERR )را به‌تفصیل نشان می‌دهد؛\r\nاین نسبت سهم هر متغیر رگرسیونی را در توضیح خروجی سیستم اندازه‌گیری می‌کند. مقادیر ERR را\r\nمی‌توان به‌عنوان معیاری برای اهمیت ویژگی‌ها تفسیر کرد. شکل 1 شبیه‌سازی پیش‌بینی مدل و\r\nداده‌های اعتبارسنجی، و نیز خودهمبستگی باقیمانده‌های مدل و همبستگی متقابل بین ورودی و\r\nباقیمانده‌ها را نشان می‌دهد."
+        },
+        {
+          "id": "4-9",
+          "passed": false,
+          "actual": "شکل .1 نتایج مدل‌سازی یک سیستم شبیه‌سازی‌شده که همراه بستهٔ SysIdentPy ارائه شده است.\r\nشبیه‌سازی آزاد )داده‌های اعتبارسنجی در مقایسه با پیش‌بینی مدل(، خودهمبستگی باقیمانده‌ها و\r\nهمبستگی متقابل بین باقیمانده‌ها و ورودی."
+        },
+        {
+          "id": "4-10",
+          "passed": true,
+          "actual": "برای اطلاعات بیشتر و نمونه‌هایی از نحوهٔ ساخت مدل‌های NARMAX و گونه‌های آن با استفاده از\r\nروش‌های مختلف برآورد پارامترها، انتخاب مرتبهٔ مدل و بسیاری موارد دیگر، به مستندات بسته مراجعه\r\nکنید."
+        },
+        {
+          "id": "table-h1",
+          "passed": true,
+          "actual": "متغیرهای رگرسیونی"
+        },
+        {
+          "id": "table-h2",
+          "passed": true,
+          "actual": "پارامترها "
+        }
+      ],
+      "search": [
+        {
+          "text": "شناسایی",
+          "passed": true
+        },
+        {
+          "text": "متغیرهای",
+          "passed": true
+        },
+        {
+          "text": "مدل‌سازی",
+          "passed": true
+        },
+        {
+          "text": "شبیه‌سازی",
+          "passed": true
+        },
+        {
+          "text": "مدل‌های",
+          "passed": true
+        },
+        {
+          "text": "model.results",
+          "passed": true
+        },
+        {
+          "text": "SysIdentPy",
+          "passed": true
+        }
+      ],
+      "passed": false,
+      "limit": "Region text is checked modulo whitespace only; this is not a native clipboard test or a guarantee for other readers."
+    }
+  },
+  "visual_review": "All six pages rendered and inspected; source typography and figure/table positions retained.",
+  "limits": [
+    "Partial translation: eight source regions only.",
+    "MuPDF region-copy checks ignore whitespace from line wrapping, but retain all other characters including ZWNJ, punctuation and combining marks.",
+    "PDFium search passes, but some mixed-language citation/parenthesis copies and table reading order differ. Full PDFium copy compatibility is not claimed.",
+    "Native clipboard behavior in Acrobat, Chrome, and Codex was not tested."
+  ]
+}

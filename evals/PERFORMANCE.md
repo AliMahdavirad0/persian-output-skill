@@ -13,3 +13,5 @@ The review used Codex CLI 0.162.0-alpha.17.2 with the user's defaults and isolat
 - **PDF raw Unicode Persian search/copy fails** with this PyMuPDF 1.28.2/Vazirmatn Light pipeline: presentation-form extraction loses joiners and splits mixed runs. Visual success is not text-layer success. The sample is experimental; a logical Unicode text companion is supplied with the downloadable artifacts. It does not repair the PDF. A human adjusted the title to a Persian-first equivalent for visual bidi order.
 
 Repository validation: 22 regression tests, including four preserved upstream Word tests and fourteen HTML audit tests. All 101 package checks and the skill metadata validator pass. Claude Code is installed but unauthenticated; invocation was not tested. No statistical naturalness improvement, arbitrary PDF support, scanned-PDF OCR or fresh Word geometry verification is claimed. The [initial pilot](BENCHMARK.md) remains a historical record.
+
+The [v0.2.2 Unicode repair](PDF-TEXT-FIX.md) supersedes the raw Unicode search failure recorded above. Reader-specific copy limits remain explicit.

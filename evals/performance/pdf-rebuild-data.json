@@ -1,0 +1,104 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "rect": [
+        0.0,
+        0.0,
+        595.280029296875,
+        841.8900146484375
+      ],
+      "blocks": [
+        {
+          "id": "1-1",
+          "bbox": [
+            166.86399841308594,
+            137.15960693359375,
+            547.7376708984375,
+            176.2930145263672
+          ],
+          "text": "SysIdentPy: A Python package for System Identification\nusing NARMAX models",
+          "size": 17.21540069580078
+        },
+        {
+          "id": "1-12",
+          "bbox": [
+            166.86398315429688,
+            312.6331481933594,
+            552.7554321289062,
+            382.3707275390625
+          ],
+          "text": "The field of System Identification (SI) aims to build mathematical models for static and\ndynamic behavior from experimental data (Ljung, 1987).\nIn particular, nonlinear system\nidentification has become a central issue in the SI community, and from the 1950s onwards\nmany methods have been proposed. In this respect, NARMAX (Nonlinear AutoRegressive\nMoving Average with eXogenous input) models are among the most well-documented and\nused model representation of dynamical systems (Billings, 2013).",
+          "size": 9.962599754333496
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "rect": [
+        0.0,
+        0.0,
+        595.280029296875,
+        841.8900146484375
+      ],
+      "blocks": [
+        {
+          "id": "4-1",
+          "bbox": [
+            166.86399841308594,
+            101.14514923095703,
+            552.750732421875,
+            123.3416976928711
+          ],
+          "text": "The model.results and model.residuals statements return the polynomial model ob-\ntained using the fit method and plot the results for qualitative analysis.",
+          "size": 9.962599754333496
+        },
+        {
+          "id": "4-5",
+          "bbox": [
+            166.86399841308594,
+            240.6221466064453,
+            552.7455444335938,
+            310.3607482910156
+          ],
+          "text": "The table below and Figure 1 are the ouput of the aforementioned example. Table 1 details the\nregressors chosen to compose the final model, its respective parameters and the error reduction\nratio (ERR), which measure the contribution of each regressor to explain the system output.\nERR values can be interpreted as a feature importance metric. Figure 1 depicts the simulation\nof model prediction and the validation data as well as the autocorrelation of the model residues\nand the cross-correlation between the input and the residues.",
+          "size": 9.962599754333496
+        },
+        {
+          "id": "4-9",
+          "bbox": [
+            166.86399841308594,
+            605.3241577148438,
+            552.756103515625,
+            639.19775390625
+          ],
+          "text": "Figure 1. Results from modeling a simulated system available with the SysIdentPy package.\nFree run simulation (validation data vs. model prediction), autocorrelation of the residues\nand cross correlation between residues and the input.",
+          "size": 9.962599754333496
+        },
+        {
+          "id": "4-10",
+          "bbox": [
+            166.864013671875,
+            646.545166015625,
+            552.74560546875,
+            680.4177856445312
+          ],
+          "text": "For more information and examples of how to build NARMAX models and its variants using\ndifferent methods for parameters estimation, model order selection and many more, see the\npackage documentation.",
+          "size": 9.962599754333496
+        }
+      ]
+    }
+  ],
+  "translations": {
+    "1-1": "SysIdentPy: بسته‌ای پایتونی برای شناسایی سیستم با استفاده از مدل‌های NARMAX",
+    "1-12": "حوزهٔ شناسایی سیستم (SI) با هدف ساخت مدل‌های ریاضی برای رفتار ایستا و پویا بر پایهٔ داده‌های تجربی شکل گرفته است (Ljung, 1987). به‌ویژه، شناسایی سیستم‌های غیرخطی به مسئله‌ای محوری در جامعهٔ SI تبدیل شده و از دههٔ 1950 به بعد روش‌های بسیاری برای آن پیشنهاد شده است. در این زمینه، مدل‌های NARMAX (خودرگرسیو غیرخطی با میانگین متحرک و ورودی برون‌زا) از مستندترین و پرکاربردترین شیوه‌های نمایش مدل سیستم‌های پویا هستند (Billings, 2013).",
+    "4-1": "دستورهای model.results و model.residuals مدل چندجمله‌ای به‌دست‌آمده با روش fit را برمی‌گردانند و نتایج را برای تحلیل کیفی ترسیم می‌کنند.",
+    "4-5": "جدول زیر و شکل 1 خروجی مثال یادشده هستند. جدول 1 متغیرهای رگرسیونی انتخاب‌شده برای تشکیل مدل نهایی، پارامترهای متناظر آن‌ها و نسبت کاهش خطا (ERR) را به‌تفصیل نشان می‌دهد؛ این نسبت سهم هر متغیر رگرسیونی را در توضیح خروجی سیستم اندازه‌گیری می‌کند. مقادیر ERR را می‌توان به‌عنوان معیاری برای اهمیت ویژگی‌ها تفسیر کرد. شکل 1 شبیه‌سازی پیش‌بینی مدل و داده‌های اعتبارسنجی، و نیز خودهمبستگی باقیمانده‌های مدل و همبستگی متقابل بین ورودی و باقیمانده‌ها را نشان می‌دهد.",
+    "4-9": "شکل 1. نتایج مدل‌سازی یک سیستم شبیه‌سازی‌شده که همراه بستهٔ SysIdentPy ارائه شده است. شبیه‌سازی آزاد (داده‌های اعتبارسنجی در مقایسه با پیش‌بینی مدل)، خودهمبستگی باقیمانده‌ها و همبستگی متقابل بین باقیمانده‌ها و ورودی.",
+    "4-10": "برای اطلاعات بیشتر و نمونه‌هایی از نحوهٔ ساخت مدل‌های NARMAX و گونه‌های آن با استفاده از روش‌های مختلف برآورد پارامترها، انتخاب مرتبهٔ مدل و بسیاری موارد دیگر، به مستندات بسته مراجعه کنید.",
+    "table-h1": "متغیرهای رگرسیونی",
+    "table-h2": "پارامترها",
+    "table-h3": "ERR"
+  },
+  "source_sha256": "4c37a45e84299c798fc9c9938886b379321e6e5e968ec1ee50bb6b65d7c9d622"
+}

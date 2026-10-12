@@ -1,5 +1,10 @@
 # Validation evidence
 
+## Version 0.2.2 PDF text repair
+
+[Current PDF repair evidence](evals/PDF-TEXT-FIX.md) supersedes the v0.2.1 presentation-form failure. Seven search tokens pass in MuPDF and PDFium, including ZWNJ words; eight MuPDF regions retain all non-whitespace characters. Full native clipboard behavior is not claimed: MuPDF inserts some extra breaks and PDFium mixed-citation copies differ. The source-like font, all six pages, figures, numeric table data, code and links remain intact.
+
+
 ## Version 0.2.1 runtime review
 
 See [the current performance report](evals/PERFORMANCE.md): 21 completed Codex executions, 22 regression tests, actual model-generated HTML geometry, DOCX structural checks, and a real scientific PDF partial-translation test. The PDF preserves figures/table/code but fails raw Unicode Persian search; Word geometry and Claude invocation remain unverified.

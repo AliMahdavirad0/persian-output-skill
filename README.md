@@ -113,3 +113,5 @@ Installation instructions follow [official Codex skill documentation](https://le
 Contributions should include a minimal failing example, destination/renderer, expected behavior, and checks that protected text remains intact. Do not submit private documents or credentials. MIT licensed; see [LICENSE](LICENSE).
 
 Current runtime evaluation and limitations: [performance review](evals/PERFORMANCE.md).
+
+The [v0.2.2 PDF Unicode repair](evals/PDF-TEXT-FIX.md) includes a searchable real-paper fixture, a reproducible example and reader-specific copy limits. The optional PDF auditor requires PyMuPDF; install `pypdfium2` as well for a second reader check. Repository tests now need the dependencies pinned in CI.
