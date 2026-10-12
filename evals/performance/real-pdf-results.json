@@ -1,0 +1,265 @@
+{
+  "source": "https://joss.theoj.org/papers/10.21105/joss.02384",
+  "source_sha256": "4c37a45e84299c798fc9c9938886b379321e6e5e968ec1ee50bb6b65d7c9d622",
+  "license": "CC BY 4.0",
+  "scope": "Title, summary, four prose/caption blocks on page 4 and two translated table headers; ERR is unchanged. Other text retained. Partial translation, not a complete Persian article.",
+  "translated_regions": 8,
+  "checks": {
+    "page_count": true,
+    "page_sizes": true,
+    "image_pixels": true,
+    "image_geometry_within_0.001pt": true,
+    "figure1_exact_geometry": true,
+    "link_destinations_and_rectangles": true,
+    "all_text_fits": true,
+    "table_numeric_block": true,
+    "code_region": true,
+    "references_pages_5_6": true,
+    "raw_unicode_persian_search": false
+  },
+  "fits": [
+    {
+      "id": "1-1",
+      "spare_height": 2.981067657470703,
+      "scale": 1.0,
+      "effective_font_pt": 17.21540069580078
+    },
+    {
+      "id": "1-12",
+      "spare_height": 17.433929443359375,
+      "scale": 1.0,
+      "effective_font_pt": 9.962599754333496
+    },
+    {
+      "id": "4-1",
+      "spare_height": 1.2750892639160156,
+      "scale": 1.0,
+      "effective_font_pt": 9.962599754333496
+    },
+    {
+      "id": "4-5",
+      "spare_height": 6.974220275878906,
+      "scale": 1.0,
+      "effective_font_pt": 9.962599754333496
+    },
+    {
+      "id": "4-9",
+      "spare_height": 2.4914073944091797,
+      "scale": 1.0,
+      "effective_font_pt": 9.962599754333496
+    },
+    {
+      "id": "4-10",
+      "spare_height": 2.4904308319091797,
+      "scale": 1.0,
+      "effective_font_pt": 9.962599754333496
+    },
+    {
+      "id": "table-h1",
+      "spare_height": 2.5295025980458683,
+      "scale": 0.9979362531529467,
+      "effective_font_pt": 8.981426278376519
+    },
+    {
+      "id": "table-h2",
+      "spare_height": 2.510000190734843,
+      "scale": 1.0,
+      "effective_font_pt": 9.0
+    }
+  ],
+  "max_image_coordinate_delta_pt": 1.52587890625e-05,
+  "images_before": [
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943626403808594,
+          173.95822143554688,
+          71.66999816894531
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      }
+    ],
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943626403808594,
+          173.95822143554688,
+          71.66999816894531
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      }
+    ],
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943626403808594,
+          173.95822143554688,
+          71.66999816894531
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      }
+    ],
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943626403808594,
+          173.95822143554688,
+          71.66999816894531
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      },
+      {
+        "bbox": [
+          166.86399841308594,
+          409.015625,
+          552.7607421875,
+          601.3989868164062
+        ],
+        "digest": "b5fff66a5c7a12002eb4267f8bd3d45b",
+        "width": 1366,
+        "height": 681
+      }
+    ],
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943626403808594,
+          173.95822143554688,
+          71.66999816894531
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      }
+    ],
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943626403808594,
+          173.95822143554688,
+          71.66999816894531
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      }
+    ]
+  ],
+  "images_after": [
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943611145019531,
+          173.95822143554688,
+          71.66998291015625
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      }
+    ],
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943626403808594,
+          173.95822143554688,
+          71.66999816894531
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      }
+    ],
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943626403808594,
+          173.95822143554688,
+          71.66999816894531
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      }
+    ],
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943611145019531,
+          173.95822143554688,
+          71.66998291015625
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      },
+      {
+        "bbox": [
+          166.86399841308594,
+          409.015625,
+          552.7607421875,
+          601.3989868164062
+        ],
+        "digest": "b5fff66a5c7a12002eb4267f8bd3d45b",
+        "width": 1366,
+        "height": 681
+      }
+    ],
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943626403808594,
+          173.95822143554688,
+          71.66999816894531
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      }
+    ],
+    [
+      {
+        "bbox": [
+          18.046001434326172,
+          11.943626403808594,
+          173.95822143554688,
+          71.66999816894531
+        ],
+        "digest": "8ac1dc41f1bd1f30fb5bdc0d3b135342",
+        "width": 650,
+        "height": 249
+      }
+    ]
+  ],
+  "visual_review": "All six pages inspected; final font change rechecked on pages 1 and 4; other pages untouched. Persian paragraphs physically right aligned, connected glyphs, readable table headers, figures/code/math preserved.",
+  "copy_search_review": "FAIL: presentation-form extraction, lost ZWNJ and split mixed runs; do not claim usable Persian copy/search.",
+  "manual_adjustment": "Persian-first equivalent title to avoid Latin-first visual ordering; other translations are actual CLI outputs.",
+  "typography": {
+    "source": "Latin Modern Sans regular (LMSans17/LMSans10)",
+    "persian_substitute": "Vazirmatn Light v33.003, SIL OFL 1.1",
+    "rationale": "Light sans-serif chosen by visual comparison with the source regular sans; source font lacks Persian. This is an approximation, not identical glyphs. Original Latin/code fonts retained in untouched content.",
+    "source_body_pt": 9.9626,
+    "source_title_pt": 17.2154,
+    "geometry_rechecked": true
+  },
+  "alignment_note": "PyMuPDF Story RTL layout was empirically tested with left/right/center styles; physical right alignment required text-align:left in this renderer. This workaround is renderer-specific, not a web recommendation."
+}

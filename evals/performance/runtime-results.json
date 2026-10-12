@@ -1,0 +1,372 @@
+{
+  "agent": "Codex CLI 0.162.0-alpha.17.2",
+  "base_commit": "6697171be3a683937fb04b9e5a53b1fff7bdb0c6",
+  "initial_runs": [
+    {
+      "case": "E01",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 21.3,
+      "usage": {
+        "input_tokens": 43024,
+        "cached_input_tokens": 26880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 137,
+        "reasoning_output_tokens": 0
+      },
+      "output": "این به‌روزرسانی ممکن است تأخیر را تا ۲۰٪ کاهش دهد. بهبود عملکرد برای همهٔ درخواست‌ها تضمین نمی‌شود. v2.1.0 و 2026-10-12 را بدون تغییر نگه دارید.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E02",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 24.5,
+      "usage": {
+        "input_tokens": 63525,
+        "cached_input_tokens": 55040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 181,
+        "reasoning_output_tokens": 24
+      },
+      "output": "اگه وقت داری می‌تونی فایل رو بفرستی؟ عجله ندارم. لینک: https://example.com/docs?v=2",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E03",
+      "mode": "without_skill",
+      "status": "completed",
+      "duration_seconds": 22.7,
+      "usage": {
+        "input_tokens": 19805,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 144,
+        "reasoning_output_tokens": 0
+      },
+      "output": "<html lang=\"fa\" dir=\"ltr\"><body><section style=\"display:grid;grid-template-columns:1fr 1fr\"><p dir=\"rtl\">این به‌روزرسانی ممکن است کمک کند.</p><figure><img src=\"figure.svg\" width=\"640\" height=\"360\" alt=\"نمودار\"><figcaption dir=\"rtl\">شکل ۱. نمونه.</figcaption></figure></section><p dir=\"rtl\"><a href=\"https://example.com/docs?v=2\">مستندات را بخوانید</a></p><pre dir=\"ltr\"><code>amount = 3.14</code></pre></body></html>",
+      "protected_tokens_exact": true,
+      "static_html_audit": {
+        "passed": true,
+        "checks": {
+          "explicit_html_balance": true,
+          "structure_and_stable_attributes": true,
+          "protected_code_scripts_styles_math": true,
+          "layout_media_and_code_directions": true
+        },
+        "parse_notes": [],
+        "limit": "Static source check only. Render both pages to compare image geometry and text fit; review translation separately."
+      },
+      "document_language_fa": true
+    },
+    {
+      "case": "E03",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 45.6,
+      "usage": {
+        "input_tokens": 71440,
+        "cached_input_tokens": 51712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 452,
+        "reasoning_output_tokens": 39
+      },
+      "output": "<html lang=\"en\" dir=\"ltr\"><body><section style=\"display:grid;grid-template-columns:1fr 1fr\"><p lang=\"fa\" dir=\"rtl\">این به‌روزرسانی ممکن است کمک کند.</p><figure><img src=\"figure.svg\" width=\"640\" height=\"360\" alt=\"نمودار\"><figcaption lang=\"fa\" dir=\"rtl\">شکل ۱. نمونه.</figcaption></figure></section><p lang=\"fa\" dir=\"rtl\"><a href=\"https://example.com/docs?v=2\">مستندات را بخوانید</a></p><pre dir=\"ltr\"><code>amount = 3.14</code></pre></body></html>",
+      "protected_tokens_exact": true,
+      "static_html_audit": {
+        "passed": true,
+        "checks": {
+          "explicit_html_balance": true,
+          "structure_and_stable_attributes": true,
+          "protected_code_scripts_styles_math": true,
+          "layout_media_and_code_directions": true
+        },
+        "parse_notes": [],
+        "limit": "Static source check only. Render both pages to compare image geometry and text fit; review translation separately."
+      },
+      "document_language_fa": false
+    },
+    {
+      "case": "E04",
+      "mode": "without_skill",
+      "status": "completed",
+      "duration_seconds": 14.3,
+      "usage": {
+        "input_tokens": 19629,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46,
+        "reasoning_output_tokens": 16
+      },
+      "output": "لازم نیست سرویس را دوباره راه‌اندازی کنید. نباید نسخه‌های پشتیبان را حذف کنید.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E04",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 17.5,
+      "usage": {
+        "input_tokens": 42797,
+        "cached_input_tokens": 33920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 138,
+        "reasoning_output_tokens": 0
+      },
+      "output": "لازم نیست سرویس را دوباره راه‌اندازی کنید. نباید نسخه‌های پشتیبان را حذف کنید.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E05",
+      "mode": "without_skill",
+      "status": "completed",
+      "duration_seconds": 14.0,
+      "usage": {
+        "input_tokens": 19636,
+        "cached_input_tokens": 13440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 58,
+        "reasoning_output_tokens": 21
+      },
+      "output": "شواهد حاکی از وجود ارتباط هستند، نه رابطهٔ علّی. نتایج از نظر آماری معنادار نبودند.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E05",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 24.2,
+      "usage": {
+        "input_tokens": 42834,
+        "cached_input_tokens": 26880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 168,
+        "reasoning_output_tokens": 0
+      },
+      "output": "شواهد حاکی از وجود ارتباط است، نه رابطهٔ علّی. نتایج از نظر آماری معنادار نبودند.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E06",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 19.6,
+      "usage": {
+        "input_tokens": 42986,
+        "cached_input_tokens": 33920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 150,
+        "reasoning_output_tokens": 0
+      },
+      "output": "دست‌کم ۱۲ شرکت‌کننده کار را به پایان رساندند؛ حدود نیمی از شرکت‌کنندگان درخواست کمک کردند.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E07",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 22.9,
+      "usage": {
+        "input_tokens": 42995,
+        "cached_input_tokens": 26880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 148,
+        "reasoning_output_tokens": 0
+      },
+      "output": "می‌تونی یه کم کمکم کنی؟\nبیا برای امروز دیگه تمومش کنیم.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E08",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 26.8,
+      "usage": {
+        "input_tokens": 42997,
+        "cached_input_tokens": 33920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 149,
+        "reasoning_output_tokens": 0
+      },
+      "output": "این قابلیت فقط در دسترس مدیران است، مگر آنکه استثنایی تأیید شده باشد.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E09",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 30.2,
+      "usage": {
+        "input_tokens": 65423,
+        "cached_input_tokens": 55680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 249,
+        "reasoning_output_tokens": 31
+      },
+      "output": "«كتاب عربي» را عیناً نگه دار. این فایل‌ها به‌روز می‌شوند. JSON: {\"amount\":3.14}",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E10",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 31.3,
+      "usage": {
+        "input_tokens": 81929,
+        "cached_input_tokens": 57216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 386,
+        "reasoning_output_tokens": 11
+      },
+      "output": "Please attach the Word article (.docx). I’ll translate it into Persian while preserving its embedded pictures and existing sections.\n\nWithout a renderer, visual layout will remain unverified. This workspace is also read-only, so saving a translated copy requires a writable output location.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E11",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 25.5,
+      "usage": {
+        "input_tokens": 44396,
+        "cached_input_tokens": 33920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 248,
+        "reasoning_output_tokens": 0
+      },
+      "output": "Please attach the scanned PDF; no source file is available in this workspace.\n\nSince the text is part of the scanned page image, it needs OCR and review before translation. The [skill’s layout guidance](.agents/skills/persian-output-skill/references/preserve-layout.md) requires this. I can assess the two-column layout once attached, but exact image positions can only be confirmed after reconstruction and visual comparison.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "E12",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 31.7,
+      "usage": {
+        "input_tokens": 44048,
+        "cached_input_tokens": 36736,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 293,
+        "reasoning_output_tokens": 0
+      },
+      "output": "Please send the article URL or HTML and the overflowing Persian paragraph. I’ll try more compact wording that preserves the full meaning.\n\nIf it still cannot fit, we’ll need to choose between allowing the text area to expand and keeping the exact layout. The [skill’s layout guidance](.agents/skills/persian-output-skill/references/preserve-layout.md) requires that choice before changing geometry; I won’t clip the text, make it unreadably small, or cover the picture.",
+      "protected_tokens_exact": true
+    },
+    {
+      "case": "A01",
+      "mode": "with_skill",
+      "status": "completed",
+      "duration_seconds": 38.3,
+      "usage": {
+        "input_tokens": 46200,
+        "cached_input_tokens": 26880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1049,
+        "reasoning_output_tokens": 0
+      },
+      "output": "<!doctype html>\n<html lang=\"fa\" dir=\"ltr\">\n<head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>رویکردی سنجیده به به‌روزرسانی نرم‌افزار</title>\n<style>\n*{box-sizing:border-box}body{margin:0;background:#f4f6f4;color:#20372a;font:17px/1.85 Tahoma,Arial,sans-serif}\nmain{max-width:1000px;margin:28px auto;padding:28px;background:white;border:1px solid #dbe5dd;border-radius:12px}\nh1{font-size:28px;line-height:1.6;min-height:90px;margin:0 0 12px}.intro{min-height:74px;margin:0 0 24px}\n.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start;direction:ltr}\n.copy{min-height:240px}h2{font-size:20px;margin:0 0 12px}p{margin:0 0 16px}figure{margin:0}img{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:8px}\nfigcaption{font-size:14px;margin-top:10px;min-height:55px}.bottom{margin-top:28px}pre{direction:ltr;text-align:left;background:#edf2ee;padding:12px;font:13px/1.6 Consolas,monospace;overflow:auto}\na{color:#245c43}a:focus-visible{outline:3px solid #c8a043;outline-offset:3px}\n@media(max-width:650px){main{margin:12px;padding:18px}.row{grid-template-columns:1fr;gap:18px}h1{font-size:23px;min-height:112px}.intro{min-height:180px}.copy{min-height:330px}figcaption{min-height:80px}}\n</style></head>\n<body><main>\n<h1 lang=\"fa\" dir=\"rtl\">رویکردی سنجیده به به‌روزرسانی نرم‌افزار</h1>\n<p class=\"intro\" lang=\"fa\" dir=\"rtl\">این مقاله توضیح می‌دهد چگونه یک به‌روزرسانی را بررسی کنیم و شواهد را از انتظارات جدا نگه داریم. نمودار صرفاً برای توضیح موضوع است و داده‌های اندازه‌گیری‌شدهٔ پژوهشی را نشان نمی‌دهد.</p>\n<section class=\"row\">\n<div class=\"copy\"><h2 lang=\"fa\" dir=\"rtl\">نتایج چه چیزی به ما می‌گویند</h2><p lang=\"fa\" dir=\"rtl\">این به‌روزرسانی ممکن است تأخیر را کاهش دهد. اما تضمین نمی‌کند که پاسخ به هر درخواست سریع‌تر باشد.</p><p lang=\"fa\" dir=\"rtl\">هنگام مستندسازی این مثال، تاریخ اصلی <bdi dir=\"ltr\">2026-10-12</bdi> و نسخهٔ <bdi dir=\"ltr\">v2.1.0</bdi> را حفظ کنید.</p></div>\n<figure><img id=\"figure-1\" src=\"assets/figure.svg\" width=\"640\" height=\"360\" alt=\"نمودار خطی برای توضیح موضوع\"><figcaption lang=\"fa\" dir=\"rtl\">شکل ۱. نموداری برای توضیح موضوع که در جای اصلی خود حفظ شده است.</figcaption></figure>\n</section>\n<section class=\"bottom\"><p lang=\"fa\" dir=\"rtl\">مستندات را بخوانید: <a href=\"https://example.com/docs?v=2\"><bdi dir=\"ltr\">https://example.com/docs?v=2</bdi></a></p>\n<pre dir=\"ltr\"><code>payload = {\"version\": \"v2.1.0\", \"amount\": 3.14}</code></pre></section>\n</main></body></html>",
+      "protected_tokens_exact": true,
+      "static_html_audit": {
+        "passed": true,
+        "checks": {
+          "explicit_html_balance": true,
+          "structure_and_stable_attributes": true,
+          "protected_code_scripts_styles_math": true,
+          "layout_media_and_code_directions": true
+        },
+        "parse_notes": [],
+        "limit": "Static source check only. Render both pages to compare image geometry and text fit; review translation separately."
+      }
+    }
+  ],
+  "followup_runs": [
+    {
+      "case": "E03",
+      "mode": "after_fix",
+      "status": "completed",
+      "duration_seconds": 22.0,
+      "usage": {
+        "input_tokens": 45388,
+        "cached_input_tokens": 34048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 289,
+        "reasoning_output_tokens": 0
+      },
+      "output": "<html lang=\"fa\" dir=\"ltr\"><body><section style=\"display:grid;grid-template-columns:1fr 1fr\"><p dir=\"rtl\">این به‌روزرسانی ممکن است کمک کند.</p><figure><img src=\"figure.svg\" width=\"640\" height=\"360\" alt=\"نمودار\"><figcaption dir=\"rtl\">شکل ۱. نمونه.</figcaption></figure></section><p dir=\"rtl\"><a href=\"https://example.com/docs?v=2\">مستندات را بخوانید</a></p><pre dir=\"ltr\"><code>amount = 3.14</code></pre></body></html>",
+      "static_html_audit": {
+        "passed": true,
+        "checks": {
+          "explicit_html_balance": true,
+          "structure_and_stable_attributes": true,
+          "protected_code_scripts_styles_math": true,
+          "layout_media_and_code_directions": true
+        },
+        "parse_notes": [],
+        "limit": "Static source check only. Render both pages to compare image geometry and text fit; review translation separately."
+      },
+      "document_language_fa": true
+    },
+    {
+      "case": "E04",
+      "mode": "after_fix",
+      "status": "completed",
+      "duration_seconds": 21.6,
+      "usage": {
+        "input_tokens": 42730,
+        "cached_input_tokens": 26880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 123,
+        "reasoning_output_tokens": 0
+      },
+      "output": "لازم نیست سرویس را دوباره راه‌اندازی کنید. نباید نسخه‌های پشتیبان را حذف کنید."
+    },
+    {
+      "case": "A01",
+      "mode": "after_fix",
+      "status": "completed",
+      "duration_seconds": 38.2,
+      "usage": {
+        "input_tokens": 46657,
+        "cached_input_tokens": 34688,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1038,
+        "reasoning_output_tokens": 20
+      },
+      "output": "<!doctype html>\n<html lang=\"fa\" dir=\"ltr\">\n<head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>رویکردی سنجیده به به‌روزرسانی نرم‌افزار</title>\n<style>\n*{box-sizing:border-box}body{margin:0;background:#f4f6f4;color:#20372a;font:17px/1.85 Tahoma,Arial,sans-serif}\nmain{max-width:1000px;margin:28px auto;padding:28px;background:white;border:1px solid #dbe5dd;border-radius:12px}\nh1{font-size:28px;line-height:1.6;min-height:90px;margin:0 0 12px}.intro{min-height:74px;margin:0 0 24px}\n.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start;direction:ltr}\n.copy{min-height:240px}h2{font-size:20px;margin:0 0 12px}p{margin:0 0 16px}figure{margin:0}img{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:8px}\nfigcaption{font-size:14px;margin-top:10px;min-height:55px}.bottom{margin-top:28px}pre{direction:ltr;text-align:left;background:#edf2ee;padding:12px;font:13px/1.6 Consolas,monospace;overflow:auto}\na{color:#245c43}a:focus-visible{outline:3px solid #c8a043;outline-offset:3px}\n@media(max-width:650px){main{margin:12px;padding:18px}.row{grid-template-columns:1fr;gap:18px}h1{font-size:23px;min-height:112px}.intro{min-height:180px}.copy{min-height:330px}figcaption{min-height:80px}}\n</style></head>\n<body><main>\n<h1 dir=\"rtl\">رویکردی سنجیده به به‌روزرسانی نرم‌افزار</h1>\n<p class=\"intro\" dir=\"rtl\">این مقاله توضیح می‌دهد چگونه یک به‌روزرسانی را بررسی کنیم و در عین حال شواهد را از انتظارات جدا نگه داریم. نمودار صرفاً برای نمایش مفهوم است و داده‌های اندازه‌گیری‌شدهٔ پژوهشی را نشان نمی‌دهد.</p>\n<section class=\"row\">\n<div class=\"copy\"><h2 dir=\"rtl\">نتایج چه چیزی به ما می‌گویند</h2><p dir=\"rtl\">این به‌روزرسانی ممکن است تأخیر را کاهش دهد. با این حال، پاسخ سریع‌تر به تک‌تک درخواست‌ها را تضمین نمی‌کند.</p><p dir=\"rtl\">هنگام مستندسازی این مثال، تاریخ اصلی <bdi dir=\"ltr\">2026-10-12</bdi> و نسخهٔ <bdi dir=\"ltr\">v2.1.0</bdi> را حفظ کنید.</p></div>\n<figure><img id=\"figure-1\" src=\"assets/figure.svg\" width=\"640\" height=\"360\" alt=\"نمودار خطی برای نمایش مفهوم\"><figcaption dir=\"rtl\">شکل 1. نموداری برای نمایش مفهوم که در جای اصلی خود حفظ شده است.</figcaption></figure>\n</section>\n<section class=\"bottom\"><p dir=\"rtl\">مستندات را بخوانید: <a href=\"https://example.com/docs?v=2\"><bdi dir=\"ltr\">https://example.com/docs?v=2</bdi></a></p>\n<pre dir=\"ltr\"><code>payload = {\"version\": \"v2.1.0\", \"amount\": 3.14}</code></pre></section>\n</main></body></html>",
+      "static_html_audit": {
+        "passed": true,
+        "checks": {
+          "explicit_html_balance": true,
+          "structure_and_stable_attributes": true,
+          "protected_code_scripts_styles_math": true,
+          "layout_media_and_code_directions": true
+        },
+        "parse_notes": [],
+        "limit": "Static source check only. Render both pages to compare image geometry and text fit; review translation separately."
+      }
+    }
+  ],
+  "word_run": {
+    "case": "D01",
+    "status": "completed",
+    "duration_seconds": 61.5,
+    "output": "[output.docx](output.docx) با ترجمهٔ فارسی آماده شد. پاراگراف‌ها، تصویر و روابط آن، ابعاد/برش و تنظیمات بخش‌ها حفظ و ساختاری بررسی شدند. `v2.1.0` و `2026-10-12` دقیقاً حفظ شدند؛ فایل‌های اصلی تغییری نکردند.\n\nهندسهٔ بصری تأیید نشده است؛ هیچ رندری انجام نشد.",
+    "structural_checks": {
+      "media_bytes_unchanged": true,
+      "image_relationships_unchanged": true,
+      "paragraph_count_unchanged": true,
+      "drawing_xml_unchanged": true,
+      "sections_unchanged": true,
+      "style_parts_unchanged": true,
+      "technical_tokens_exact": true,
+      "drawing_stays_in_same_paragraph": true
+    },
+    "visual_geometry_verified": false
+  },
+  "review_method": "Mechanical token/HTML/OOXML checks plus source-fidelity review by the implementing agent; no blind independent human comparison.",
+  "limits": [
+    "Single run per case/configuration; no statistical significance or general naturalness uplift.",
+    "Claude Code was not logged in.",
+    "Word picture and drawing XML preserved; no Word/PDF rendering of the translated DOCX.",
+    "Scanned PDF case exercises missing-source/OCR handling, not actual PDF translation."
+  ]
+}

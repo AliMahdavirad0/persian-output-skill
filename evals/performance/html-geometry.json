@@ -1,0 +1,90 @@
+{
+  "desktop": {
+    "before": {
+      "code": "payload = {\"version\": \"v2.1.0\", \"amount\": 3.14}",
+      "images": [
+        {
+          "loaded": true,
+          "rect": {
+            "height": 257.0625,
+            "width": 457,
+            "x": 646.5,
+            "y": 257
+          },
+          "src": "assets/figure.svg"
+        }
+      ],
+      "language": "en",
+      "overflow": false,
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "after": {
+      "code": "payload = {\"version\": \"v2.1.0\", \"amount\": 3.14}",
+      "images": [
+        {
+          "loaded": true,
+          "rect": {
+            "height": 257.0625,
+            "width": 457,
+            "x": 646.5,
+            "y": 257
+          },
+          "src": "assets/figure.svg"
+        }
+      ],
+      "language": "fa",
+      "overflow": false,
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      }
+    }
+  },
+  "mobile": {
+    "before": {
+      "code": "payload = {\"version\": \"v2.1.0\", \"amount\": 3.14}",
+      "images": [
+        {
+          "loaded": true,
+          "rect": {
+            "height": 176.0625,
+            "width": 313,
+            "x": 31,
+            "y": 707
+          },
+          "src": "assets/figure.svg"
+        }
+      ],
+      "language": "en",
+      "overflow": false,
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    "after": {
+      "code": "payload = {\"version\": \"v2.1.0\", \"amount\": 3.14}",
+      "images": [
+        {
+          "loaded": true,
+          "rect": {
+            "height": 176.0625,
+            "width": 313,
+            "x": 31,
+            "y": 707
+          },
+          "src": "assets/figure.svg"
+        }
+      ],
+      "language": "fa",
+      "overflow": false,
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    }
+  }
+}

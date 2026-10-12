@@ -12,7 +12,7 @@ Deliver natural Persian with correct direction for the destination. Follow the u
 Read only the reference needed for the current output:
 
 - Prose composition or editing: [Persian writing](references/writing.md).
-- English-to-Persian translation: [Translation](references/translation.md) and [Register](references/register.md).
+- English-to-Persian translation: [Translation](references/translation.md); read [Register](references/register.md) when choosing or reconciling tone needs additional guidance.
 - Translate an existing website, article, Word file, or PDF in its original layout: [Preserve the source layout](references/preserve-layout.md), plus the translation reference.
 - Chat, Markdown, plain text, or invisible Unicode marks: [Text direction](references/text-direction.md).
 - HTML, CSS, or a web interface: [Web RTL](references/web.md).

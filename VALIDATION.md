@@ -1,5 +1,10 @@
 # Validation evidence
 
+## Version 0.2.1 runtime review
+
+See [the current performance report](evals/PERFORMANCE.md): 21 completed Codex executions, 22 regression tests, actual model-generated HTML geometry, DOCX structural checks, and a real scientific PDF partial-translation test. The PDF preserves figures/table/code but fails raw Unicode Persian search; Word geometry and Claude invocation remain unverified.
+
+
 ## Version 0.2.0 follow-up
 
 The 0.2.0 extension is based on upstream commit `099a27d`. The Word builder, Word regression tests, committed before/after artifacts and alignment/date fixes are preserved. All 15 repository regression tests pass, including the four upstream Word tests and seven new static HTML audit tests. The package checker passes with the translation data, references, authored article fixture and evaluation files included.

@@ -2,6 +2,8 @@
 
 ## Understand and draft
 
+For a short ordinary phrase or paragraph, translate and check fidelity directly. Do not load the example bank, glossary or every format reference, create scratch files, or launch artifact audits unless the request actually needs them. Read register guidance when the audience or source voice is unclear; use a user-specified register directly.
+
 Read the complete available source before translating. Identify the audience, genre, argument, pronoun references, idioms, and terminology. For a URL, retrieve the actual article/page, including relevant captions and headings; a search snippet is not the source. Report inaccessible portions instead of inventing them.
 
 Translate meaning in coherent sentences or paragraphs, rather than individual DOM text nodes or word-for-word substitutions. Use Persian clause order and collocations while preserving what each clause claims. Keep source headings, paragraphs, lists, figures, tables, links, footnotes, and citations unless the user requests a structural rewrite. If the user supplied a glossary, use it first; then established domain terminology, then a context-appropriate ordinary equivalent.

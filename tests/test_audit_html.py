@@ -36,6 +36,38 @@ class HTMLAuditTests(unittest.TestCase):
         a = '<p translate="no">Original quote</p>'
         self.assertFalse(module.audit(a, a.replace('Original', 'New'))['passed'])
 
+    def test_layout_direction_is_not_a_text_change(self):
+        self.assertFalse(module.audit(BASE, FA.replace('<div dir="ltr">', '<div dir="rtl">'))['passed'])
+
+    def test_code_direction_is_preserved(self):
+        source = '<pre dir="ltr"><code>value=3.14</code></pre>'
+        self.assertFalse(module.audit(source, source.replace('dir="ltr"', 'dir="rtl"'))['passed'])
+
+    def test_nontranslatable_attributes_are_frozen(self):
+        source = '<p translate="no" title="Original">Quote</p>'
+        self.assertFalse(module.audit(source, source.replace('title="Original"', 'title="Changed"'))['passed'])
+
+    def test_inherited_nontranslatable_attributes(self):
+        source = '<div translate="no"><img src="a.svg" alt="Original"></div>'
+        self.assertFalse(module.audit(source, source.replace('alt="Original"', 'alt="Changed"'))['passed'])
+
+    def test_explicit_translate_yes_overrides_inheritance(self):
+        source = '<div translate="no">Fixed <span translate="yes" title="Hello">Hello</span></div>'
+        translated = source.replace('title="Hello"', 'title="سلام"').replace('>Hello<', '>سلام<')
+        self.assertTrue(module.audit(source, translated)['passed'])
+
+    def test_direction_of_text_with_inline_media_is_frozen(self):
+        source = '<p dir="ltr">Hello <img src="a.svg"></p>'
+        translated = source.replace('Hello', 'سلام').replace('dir="ltr"', 'dir="rtl"')
+        self.assertFalse(module.audit(source, translated)['passed'])
+
+    def test_invalid_translate_value_inherits(self):
+        source = '<div translate="no"><span translate=" no " title="Original">Quote</span></div>'
+        self.assertFalse(module.audit(source, source.replace('title="Original"', 'title="Changed"'))['passed'])
+        source = '<span translate=" no " title="Original">Hello</span>'
+        translated = source.replace('title="Original"', 'title="سلام"').replace('>Hello<', '>سلام<')
+        self.assertTrue(module.audit(source, translated)['passed'])
+
 
 if __name__ == '__main__':
     unittest.main()

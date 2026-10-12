@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.1 — 2026-10-12
+
+- Fix the HTML auditor to preserve layout/media/code direction and inherited non-translatable attributes, with seven regressions.
+- Separate full-page Persian language metadata from source layout direction; streamline short translations.
+- Preserve source typography with a disclosed similar Persian substitute when source glyphs are unavailable.
+- Strengthen PDF acceptance: raw Unicode copy/search, bounded fitting, redaction asset/link checks and Latin-first title review.
+- Record actual Codex behavior, generated HTML geometry, DOCX structure and a real scientific PDF partial test, including its failed Persian text-layer check.
+
+
 ## 0.2.0 — 2026-10-12
 
 - Add faithful English-to-Persian translation and audience-specific register guidance.

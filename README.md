@@ -111,3 +111,5 @@ Inspect a rendered result before using it as a verified deliverable. See [valida
 Installation instructions follow [official Codex skill documentation](https://learn.chatgpt.com/docs/build-skills) and [official Claude Code skill documentation](https://code.claude.com/docs/en/skills), reviewed 2026-10-12. Bidi guidance follows [Unicode UAX #9](https://www.unicode.org/reports/tr9/) and [W3C inline markup guidance](https://www.w3.org/International/articles/inline-bidi-markup/). Shared format support is not a claim that invocation has been tested in every client version.
 
 Contributions should include a minimal failing example, destination/renderer, expected behavior, and checks that protected text remains intact. Do not submit private documents or credentials. MIT licensed; see [LICENSE](LICENSE).
+
+Current runtime evaluation and limitations: [performance review](evals/PERFORMANCE.md).
